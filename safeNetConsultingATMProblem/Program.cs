@@ -103,9 +103,9 @@ namespace safeNetConsultingATMProblem
 			string withDrawTrim = withdraw.Substring(2);
 			if(Int32.TryParse(withDrawTrim, out wDV))
 			{
-				while(noFunds == false)
+				while(noFunds == false) 
 				{
-					if(wDV - 100 >= 0)
+					if((wDV - 100 >= 0) && (b100 >= 1))
 					{
 						if (b100 >= 1)
 						{
@@ -120,7 +120,7 @@ namespace safeNetConsultingATMProblem
 
 					}
 
-					else if(wDV - 50 >= 0)
+					else if((wDV - 50 >= 0) && (b50 >= 1))
 					{
 
 						if (b50 >= 1)
@@ -136,7 +136,7 @@ namespace safeNetConsultingATMProblem
 
 					}
 
-					else if (wDV - 20 >= 0)
+					else if ((wDV - 20 >= 0) && (b20 >= 1))
 					{
 						if (b20 >= 1)
 						{
@@ -150,7 +150,7 @@ namespace safeNetConsultingATMProblem
 						}
 					}
 
-					else if (wDV - 10 >= 0)
+					else if ((wDV - 10 >= 0) && (b10 >= 1))
 					{
 						if (b10 >= 1)
 						{
@@ -164,7 +164,7 @@ namespace safeNetConsultingATMProblem
 						}
 					}
 
-					else if (wDV - 5 >= 0)
+					else if ((wDV - 5 >= 0) && (b5 >= 1))
 					{
 						if (b5 >= 1)
 						{
@@ -178,7 +178,7 @@ namespace safeNetConsultingATMProblem
 						}
 					}
 
-					else if (wDV - 1 >= 0)
+					else if ((wDV - 1 >= 0) && (b1 >= 1))
 					{
 						if (b1 >= 1)
 						{
