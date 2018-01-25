@@ -1,0 +1,12 @@
+C:\Programing\safeNetConsultingATMProblem\safeNetConsultingATMProblem\bin\Debug\safeNetConsultingATMProblem.exe.config
+C:\Programing\safeNetConsultingATMProblem\safeNetConsultingATMProblem\bin\Debug\safeNetConsultingATMProblem.exe
+C:\Programing\safeNetConsultingATMProblem\safeNetConsultingATMProblem\bin\Debug\safeNetConsultingATMProblem.pdb
+C:\Programing\safeNetConsultingATMProblem\safeNetConsultingATMProblem\obj\Debug\safeNetConsultingATMProblem.csprojResolveAssemblyReference.cache
+C:\Programing\safeNetConsultingATMProblem\safeNetConsultingATMProblem\obj\Debug\safeNetConsultingATMProblem.exe
+C:\Programing\safeNetConsultingATMProblem\safeNetConsultingATMProblem\obj\Debug\safeNetConsultingATMProblem.pdb
+C:\Programming\Repos\SafeNet ATM\safeNetConsultingATMProblem\bin\Debug\safeNetConsultingATMProblem.exe.config
+C:\Programming\Repos\SafeNet ATM\safeNetConsultingATMProblem\bin\Debug\safeNetConsultingATMProblem.exe
+C:\Programming\Repos\SafeNet ATM\safeNetConsultingATMProblem\bin\Debug\safeNetConsultingATMProblem.pdb
+C:\Programming\Repos\SafeNet ATM\safeNetConsultingATMProblem\obj\Debug\safeNetConsultingATMProblem.csprojResolveAssemblyReference.cache
+C:\Programming\Repos\SafeNet ATM\safeNetConsultingATMProblem\obj\Debug\safeNetConsultingATMProblem.exe
+C:\Programming\Repos\SafeNet ATM\safeNetConsultingATMProblem\obj\Debug\safeNetConsultingATMProblem.pdb
