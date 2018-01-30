@@ -18,10 +18,10 @@ namespace safeNetConsultingATMProblem
 			do
 			{
 				Console.WriteLine(" ");
-				Console.WriteLine("W <amount> will withdraw said ammount of cash from the machine, you will be given a warning if there is insufficient funds");
-				Console.WriteLine("R will reset the ammount of money in the machine");
-				Console.WriteLine("I <denominations> will tell you how many of each bill is in the machine");
-				Console.WriteLine("Q will quite the program.");
+				Console.WriteLine("W: <amount> will withdraw said ammount of cash from the machine, you will be given a warning if there is insufficient funds");
+				Console.WriteLine("R: will reset the ammount of money in the machine");
+				Console.WriteLine("I: <denominations> will tell you how many of each bill is in the machine");
+				Console.WriteLine("Q: will quit the program.");
 				Console.WriteLine(" ");
 
 				UI = Console.ReadLine();
@@ -38,6 +38,7 @@ namespace safeNetConsultingATMProblem
 					case 'R':
 						{
 							test.R();
+                            Console.WriteLine("Bills refilled");
 							break;
 						}
 
@@ -51,6 +52,7 @@ namespace safeNetConsultingATMProblem
 					case 'Q':
 						{
 							exit = true;
+                            Console.WriteLine("Exiting Program");
 							break;
 						}
 
