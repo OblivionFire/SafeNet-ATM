@@ -70,6 +70,7 @@ namespace safeNetConsultingATMProblem
     class ATM
     {
         // Finalized count used for bill restock
+        private readonly int fB1000 = 10;
         private readonly int fB100 = 10;
         private readonly int fB50 = 10;
         private readonly int fB20 = 10;
@@ -78,6 +79,7 @@ namespace safeNetConsultingATMProblem
 		private readonly int fB1 = 10;
 
         // current running total of bills in machine, restock will be called and instation of program, thus base value is 0
+        private int b1000 = 0;
         private int b100 = 0;
         private int b50 = 0;
         private int b20 = 0;
@@ -95,6 +97,7 @@ namespace safeNetConsultingATMProblem
 			int wDV = 0;
 			bool noFunds = false;
 
+            int tB1000 = b1000;
 			int tB100 = b100;
 			int tB50 = b50;
 			int tB20 = b20;
@@ -107,7 +110,22 @@ namespace safeNetConsultingATMProblem
 			{
 				while(noFunds == false) 
 				{
-					if((wDV - 100 >= 0) && (b100 >= 1))
+
+                    if((wDV - 1000 >= 0) && (b1000 >= 1))
+                    {
+                        if(b1000 >= 1)
+                        {
+                            b1000 -= 1;
+                            wDV -= 1000;
+                        }
+
+                        else
+                        {
+                            noFunds = true;
+                        }
+                        
+                    }
+					else if((wDV - 100 >= 0) && (b100 >= 1))
 					{
 						if (b100 >= 1)
 						{
@@ -206,7 +224,7 @@ namespace safeNetConsultingATMProblem
 
 				}
 
-
+                b1000 = tB1000;
 				b100 = tB100;
 				b50 = tB50;
 				b20 = tB20;
@@ -226,6 +244,7 @@ namespace safeNetConsultingATMProblem
         public string R()
         {
             //Resets current count of bills to that of finalised storage ammounts
+            b1000 = fB1000;
             b100 = fB100;
             b50 = fB50;
             b20 = fB20;
@@ -244,7 +263,11 @@ namespace safeNetConsultingATMProblem
 
             foreach (var x in splitRe)
             {
-                if(x.Trim().Equals("100"))
+                if(x.Trim().Equals("1000"))
+                {
+                    Console.WriteLine("$1000 " + b1000);
+                }
+                else if(x.Trim().Equals("100"))
                 {
 					Console.WriteLine("$100 - " + b100);
                 }
